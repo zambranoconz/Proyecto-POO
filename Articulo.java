@@ -1,18 +1,19 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package sortomatic;
 
-/**
- *
- * @author Rudy <your.name at your.org>
- */
+
 public abstract class Articulo {
     // atributos
     protected double ancho, alto;
     protected String titulo, tipo;
+    
+    
+    public Articulo(double ancho, double alto, String titulo, String tipo) {
+        this.ancho = ancho;
+        this.alto = alto;
+        this.titulo = titulo;
+        this.tipo = tipo;
+    }
+    
     
     // getters y setters
     public double getAncho() {
@@ -46,16 +47,4 @@ public abstract class Articulo {
     public void setTipo(String tipo) {
         this.tipo = tipo;
     }
-    
-    // constructor
-
-    public Articulo(double ancho, double alto, String titulo, String tipo) {
-        this.ancho = ancho;
-        this.alto = alto;
-        this.titulo = titulo;
-        this.tipo = tipo;
-    }
-   
-    
-    
 }

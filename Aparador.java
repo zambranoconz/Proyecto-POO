@@ -1,24 +1,26 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package sortomatic;
 
 import java.util.ArrayList;
 import java.util.Collections;
 
-/**
- *
- * @author Rudy <your.name at your.org>
- */
+
 public class Aparador {
     private int numEstantes;
     private Estante[] listaEstantes;
     private ArrayList<Articulo> listaArticulos;
     private double sumaTotal;
     
-     
+    
+    public Aparador(int cantidad, double longitud ) {
+      numEstantes = cantidad;
+       listaEstantes = new Estante[numEstantes];
+       listaArticulos = new ArrayList<Articulo>();
+       
+       for (int i=0; i<numEstantes; i++){
+           Estante temporal = new Estante(longitud);
+           listaEstantes[i]= temporal;
+       }
+    }
     
     public ArrayList<Articulo> getListaArticulos() {
         return listaArticulos;
@@ -51,26 +53,11 @@ public class Aparador {
     public void setListaEstantes(Estante[] listaEstantes) {
         this.listaEstantes = listaEstantes;
     }
-
-    public Aparador(int cantidad, double longitud ) {
-      numEstantes = cantidad;
-       listaEstantes = new Estante[numEstantes];
-       listaArticulos = new ArrayList<Articulo>();
-       
-       for (int i=0; i<numEstantes; i++){
-           Estante temporal = new Estante(longitud);
-           listaEstantes[i]= temporal;
-       }
-       
-       
-       
-       
-        
-    }
     
     public void ordenar(){ //esta metodo es para subir al archivo
     
-}
+    }
+    
     public void agregarArticulo (Articulo art){
         listaArticulos.add(art);
     }
