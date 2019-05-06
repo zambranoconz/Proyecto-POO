@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package sortomatic;
 
 import java.io.FileNotFoundException;
@@ -12,10 +7,7 @@ import java.util.FormatterClosedException;
 import java.util.NoSuchElementException;
 import javax.swing.JOptionPane;
 
-/**
- *
- * @author Rudy <your.name at your.org>
- */
+
 public class Finalizado extends javax.swing.JFrame {
 private ArrayList<Articulo> finale;
     /**
